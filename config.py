@@ -6,7 +6,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "27026389")
     API_HASH  = os.environ.get("API_HASH", "158b014213c39d3b342a8792e495a5dc")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6139931468:AAEInK7S9neJ5Z_IlJx3bWE8s7JWDvamFfU") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6402185585:AAEipQ2sRiehtofziBiJzbYc2PgQ67fw858") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Cluster0")     
@@ -14,7 +14,7 @@ class Config(object):
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/5fc119c05326d2595965f.jpg")
+    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/804eb7fffdb95208a7123.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1601545124').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "fsremote") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1001843978274))
@@ -26,21 +26,21 @@ class Config(object):
 
 class Txt(object):
     # part of text configuration
-    START_TXT = """<b>Hᴀɪ {} 👋,
- I ᗩᗰ  ᗩɴ ᗩᴅᴠᴀɴᴄᴇᴅ ᗩɴᴅ ᗩ ᑭᴏᴡᴇʀꜰᴜʟ ᖇᴇɴᴀᴍᴇ ᗷᴏᴛ
-ᑌՏɪɴɢ ᗰᗴ Yᴏᴜ ᑕᴀɴ ᖇᴇɴᴀᴍᴇ & ᑕʜᴀɴɢᴇ Tʜᴜᴍʙɴᴀɪʟ Oꜰ Yᴏᴜʀ ᖴɪʟᴇ.
-Yᴏᴜ ᑕᴀɴ ᗩʟՏᴏ ᑕᴏɴᴠᴇʀᴛ ᐯɪᴅᴇᴏ Tᴏ ᖴɪʟᴇ & ᖴɪʟᴇ Tᴏ ᐯɪᴅᴇᴏ
-I  ᗩʟꜱᴏ ՏᴜᴘᴘᴏʀᴛՏ ᑕᴜՏᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟ ᗩɴᴅ ᑕᴜՏᴛᴏᴍ ᑕᴀᴘᴛɪᴏɴ.
-TʜɪՏ ᗷᴏᴛ ᗯᴀՏ ᑕʀᴇᴀᴛᴇᴅ ᗷʏ : @Speedy208 ⚡❤️</b>"""
+    START_TXT = """<b>HI {} 👋,
+      𝐒𝐨𝐲 𝐑𝐞𝐧𝐚𝐦𝐞 𝐅𝐢𝐥𝐞𝐬 𝐁𝐨𝐭
+𝐏𝐮𝐞𝐝𝐨 𝐜𝐚𝐦𝐛𝐢𝐚𝐫 𝐞𝐥 𝐧𝐨𝐦𝐛𝐫𝐞 𝐲 𝐦𝐢𝐧𝐢𝐚𝐭𝐮𝐫𝐚 𝐝𝐞 𝐬𝐮 𝐚𝐫𝐜𝐡𝐢𝐯𝐨 𝐝𝐞 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦.
+𝐓𝐚𝐦𝐛𝐢é𝐧 𝐩𝐮𝐞𝐝𝐞 𝐜𝐨𝐧𝐯𝐞𝐫𝐭𝐢𝐫 𝐮𝐧 𝐯í𝐝𝐞𝐨 𝐚 𝐚𝐫𝐜𝐡𝐢𝐯𝐨 𝐲 𝐚𝐫𝐜𝐡𝐢𝐯𝐨 𝐚 𝐯í𝐝𝐞𝐨.
+𝐄𝐥 𝐁𝐨𝐭 𝐭𝐚𝐦𝐛𝐢é𝐧 𝐚𝐝𝐦𝐢𝐭𝐞 𝐬𝐮𝐛𝐭í𝐭𝐮𝐥𝐨𝐬 𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐥𝐢𝐳𝐚𝐝𝐨𝐬 𝐲 𝐦𝐢𝐧𝐢𝐚𝐭𝐮𝐫𝐚𝐬 𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐥𝐢𝐳𝐚𝐝𝐚𝐬. 
+>> 𝐂𝐫𝐞𝐚𝐝𝐨 𝐩𝐨𝐫 @𝐟𝐞𝐟𝐭𝟎𝟓 <<⚡💙</b>"""
 
     ABOUT_TXT = """<b>╭───────────⍟
-├🤖 ᴍy ɴᴀᴍᴇ : {}
-├🖥️ Dᴇᴠᴇʟᴏᴩᴇʀꜱ : <a href=https://t.me/LovelyXAssociation>Network</a> 
-├👨‍💻 Pʀᴏɢʀᴀᴍᴇʀ : <a href=@Speedy208>𝑆𝑝𝑒𝑒𝑑𝑦</a>
-├📕 Lɪʙʀᴀʀy : <a href=https://github.com/pyrogram>Pyʀᴏɢʀᴀᴍ</a>
-├✏️ Lᴀɴɢᴜᴀɢᴇ: <a href=https://www.python.org>Pyᴛʜᴏɴ 3</a>
-├💾 Dᴀᴛᴀ Bᴀꜱᴇ: <a href=https://cloud.mongodb.com>Mᴏɴɢᴏ DB</a>
-├📊 Bᴜɪʟᴅ Vᴇʀꜱɪᴏɴ: <a href=https://github.com/Darklightning2008/RenamerS>Pyʀᴏ Rᴇɴᴀᴍᴇʀ V3.0.0</a></b>     
+├🤖 My Name : {}
+├🖥️ Desarrollador : <a href=https://t.me/fsremote>Network</a> 
+├👨‍💻 Programador: <a href=@feft05>FɛʄȶϟHUNTER</a>
+├📕 Library : <a href=https://github.com/pyrogram>Pyʀᴏɢʀᴀᴍ</a>
+├✏️ Lenguaje: <a href=https://www.python.org>Pyᴛʜᴏɴ 3</a>
+├💾 DB: <a href=https://cloud.mongodb.com>Mongo DB</a>
+├📊 Build Version: <a href=https://github.com/> V3.0.0</a></b>     
 ╰───────────────⍟ """
 
     HELP_TXT = """
@@ -58,7 +58,7 @@ Exᴀᴍᴩʟᴇ:- /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 ⏰ Dᴜʀᴀᴛɪᴏɴ: {duration}
 ✏️ <b><u>Hᴏᴡ Tᴏ Rᴇɴᴀᴍᴇ A Fɪʟᴇ</u></b>
 <b>•></b> Sᴇɴᴅ Aɴy Fɪʟᴇ Aɴᴅ Tyᴩᴇ Nᴇᴡ Fɪʟᴇ Nɴᴀᴍᴇ \nAɴᴅ Aᴇʟᴇᴄᴛ Tʜᴇ Fᴏʀᴍᴀᴛ [ document, video, audio ].           
-ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/LovelyXSupport>𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
+ℹ️ 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/feft05>𝑺𝑼𝑷𝑷𝑶𝑹𝑻</a>
 """
 
     PROGRESS_BAR = """<b>\n
