@@ -11,13 +11,13 @@ async def start(client, message):
     user = message.from_user
     await db.add_user(client, message)                
     button = InlineKeyboardMarkup([[
-        InlineKeyboardButton("👨‍💻 Dᴇᴠꜱ 👨‍💻", callback_data='dev')
+        InlineKeyboardButton("👨‍💻 Dev 👨‍💻", callback_data='dev')
         ],[
-        InlineKeyboardButton('📯 Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/LovelyXAssociation'),
-        InlineKeyboardButton('💁‍♂️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/LovelyXSupport')
+        InlineKeyboardButton('📯 Updates', url='https://t.me/fsremote'),
+        InlineKeyboardButton('💁‍♂️ Soporte', url='https://t.me/feft05')
         ],[
-        InlineKeyboardButton('🎛️ Aʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('🛠️ Hᴇʟᴩ', callback_data='help')
+        InlineKeyboardButton('🎛️ About', callback_data='about'),
+        InlineKeyboardButton('🛠️ Help', callback_data='help')
     ]])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)       
@@ -33,13 +33,13 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup([[
-                InlineKeyboardButton("👨‍💻 Dᴇᴠꜱ 👨‍💻", callback_data='dev')
+                InlineKeyboardButton("👨‍💻 Dev 👨‍💻", callback_data='dev')
                 ],[
-                InlineKeyboardButton('📯 Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/LovelyXAssociation'),
-                InlineKeyboardButton('💁‍♂️ Sᴜᴩᴩᴏʀᴛ', url='https://t.me/LovelyXSupport')
+                InlineKeyboardButton('📯 Updates', url='https://t.me/fsremote'),
+                InlineKeyboardButton('💁‍♂️ Soporte', url='https://t.me/feft05')
                 ],[
-                InlineKeyboardButton('🎛️ Aʙᴏᴜᴛ', callback_data='about'),
-                InlineKeyboardButton('🛠️ Hᴇʟᴩ', callback_data='help')
+                InlineKeyboardButton('🎛️ About', callback_data='about'),
+                InlineKeyboardButton('🛠️ Help', callback_data='help')
             ]])
         )
     elif data == "help":
@@ -48,12 +48,9 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/Darklightning2008/RenameeS")
-                ],[
-                InlineKeyboardButton("❤️‍🔥 Hᴏᴡ Tᴏ Uꜱᴇ❤️‍🔥", url='https://youtu.be/4ZfvMSDXBVg')
-                ],[
-                InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
-                InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
+              
+                InlineKeyboardButton("🔒 Close", callback_data = "close"),
+                InlineKeyboardButton("◀️ Back", callback_data = "start")
             ]])            
         )
     elif data == "about":
@@ -62,12 +59,9 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/Darklightning2008/RenamerS")
-                ],[
-                InlineKeyboardButton("🖥️ Hᴏᴡ Tᴏ Mᴀᴋᴇ", url="https://youtu.be/GfulqsSnTv4")
-                ],[
-                InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
-                InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
+                
+                InlineKeyboardButton("🔒 Close", callback_data = "close"),
+                InlineKeyboardButton("◀️ Back", callback_data = "start")
             ]])            
         )
     elif data == "dev":
@@ -76,12 +70,9 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("❣️ Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", url="https://github.com/Darklightning2008/RenamerS")
-                ],[
-                InlineKeyboardButton("🖥️ Hᴏᴡ Tᴏ Mᴀᴋᴇ", url="https://youtu.be/GfulqsSnTv4")
-                ],[
-                InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
-                InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
+                
+                InlineKeyboardButton("🔒 Close", callback_data = "close"),
+                InlineKeyboardButton("◀️ Back", callback_data = "start")
             ]])          
         )
     elif data == "close":
