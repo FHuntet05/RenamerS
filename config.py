@@ -17,7 +17,7 @@ class Config(object):
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/804eb7fffdb95208a7123.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1601545124').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "fsremote") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -1001843978274))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL",-1001843978274))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
@@ -31,7 +31,7 @@ class Txt(object):
 𝐏𝐮𝐞𝐝𝐨 𝐜𝐚𝐦𝐛𝐢𝐚𝐫 𝐞𝐥 𝐧𝐨𝐦𝐛𝐫𝐞 𝐲 𝐦𝐢𝐧𝐢𝐚𝐭𝐮𝐫𝐚 𝐝𝐞 𝐬𝐮 𝐚𝐫𝐜𝐡𝐢𝐯𝐨 𝐝𝐞 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦.
 𝐓𝐚𝐦𝐛𝐢é𝐧 𝐩𝐮𝐞𝐝𝐞 𝐜𝐨𝐧𝐯𝐞𝐫𝐭𝐢𝐫 𝐮𝐧 𝐯í𝐝𝐞𝐨 𝐚 𝐚𝐫𝐜𝐡𝐢𝐯𝐨 𝐲 𝐚𝐫𝐜𝐡𝐢𝐯𝐨 𝐚 𝐯í𝐝𝐞𝐨.
 𝐄𝐥 𝐁𝐨𝐭 𝐭𝐚𝐦𝐛𝐢é𝐧 𝐚𝐝𝐦𝐢𝐭𝐞 𝐬𝐮𝐛𝐭í𝐭𝐮𝐥𝐨𝐬 𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐥𝐢𝐳𝐚𝐝𝐨𝐬 𝐲 𝐦𝐢𝐧𝐢𝐚𝐭𝐮𝐫𝐚𝐬 𝐩𝐞𝐫𝐬𝐨𝐧𝐚𝐥𝐢𝐳𝐚𝐝𝐚𝐬. 
->> 𝐂𝐫𝐞𝐚𝐝𝐨 𝐩𝐨𝐫 @𝐟𝐞𝐟𝐭𝟎𝟓 <<⚡💙</b>"""
+>> 𝐂𝐫𝐞𝐚𝐝𝐨 𝐩𝐨𝐫 @feft05 <<⚡💙</b>"""
 
     ABOUT_TXT = """<b>╭───────────⍟
 ├🤖 My Name : {}
